@@ -1,5 +1,3 @@
-# IoT-Based-Real-Time-Intrusion-Detection-and-Alert-System
-
 
 # IOT Theft Detection
 
@@ -28,10 +26,7 @@ This project is about the development of an Internet of Things (IoT) based smart
 As you know, the NodeMCU is a WiFi-enabled microcontroller, Which can connect to the internet via WiFi. So, using the BLYNK Blynk application, we can activate the device. For this purpose, we connected the button with the virtual pin, so that when the activate button is pressed, the value in the variable "state" will change from "1" to "0" (Refer code).
 
 In the next step, if the "state" is 1, the PIR Sensor starts to check for the intruders. So, whenever an intruder (ie, motion) is detected, the sensor will send a HIGH value to the NodeMCU. When NodeMCU reads a HIGH value, an HTTP request will be sent from the NodeMCU. This HTTP request (WebHooks API) will trigger ClickSend SMS Service, thus we receive the SMS in our Phone as soon as the Motion is Detected.
-
-
-<img width="801" height="518" alt="Architecture" src="https://github.com/user-attachments/assets/79bc6dcc-bd63-4a30-baa1-729e7a7c3bb3" />
-
+![](Architecture.png)
 
 HTTP (Hypertext Transfer Protocol) is a standard Application protocol that functions as a request-response protocol between client and server.
 
@@ -43,7 +38,7 @@ It is widely used in IoT based embedded applications like Home Automation, vehic
 
 ## Communication Flow
 
-<img width="773" height="521" alt="communication" src="https://github.com/user-attachments/assets/07fa61a6-0579-471e-b8c4-b672461e09a8" />
+![](communication.png)
 
 
 
@@ -58,5 +53,6 @@ Now click on that and search for SMS and select ClickSend SMS. This feature will
 And finally, click the Create Action Button.
 ## Whenever a movement is detected, the Alarm will turn on.
 
-![image](https://github.com/user-attachments/assets/b831bbd8-476d-4f09-aff8-3856870efbc7)
+![](image.jpg)
+
 
